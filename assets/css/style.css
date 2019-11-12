@@ -304,77 +304,68 @@ body {
   .js-toggle.on {
       background: #ff0033;
       color: #000;
-
+  }
 
   /* selfハンバーガーメニュー */
 
-  .ham {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    background: aqua; 
-  }
-
-  .ham_line{
-    position: absolute;
-    left: 10px;
-    width: 20px;
-    height: 1px;
-    background: #333333;
-  }
-
-  .ham_line1 {
-    top: 10px;
-  }
 
 
   /* selfハンバーガーメニューここまで */
 
 
   /* 宿題タブメニュー */
-  .tab-nav2 {
+
+  .menu-tab {
     display: flex;
   }
-  
-  .tab-nav2 li {
+
+  .menu-tab li {
     border-right: 1px solid #ddd;
     border-top: 1px solid #ddd;
     background-color: #eee;
   }
-  
-  .tab-nav2 li:first-child {
-    border-left: 1px solid #ddd;
+
+  .menu-tab li:first-child {
+    border-left: 1px slid #ddd;
   }
   
-  .tab-nav2 li a {
+  .menu-tab li a {
     display: block;
     padding: 5px 10px;
     color: #777;
     text-decoration: none;
   }
-  
-  .tab-nav2 li a.active {
+    
+  .menu-tab li a.active {
     border-bottom: 1px solid #fff;
-    background-color: #fff;
+    background-color:aqua;
     margin-bottom: -1px;
   }
-  
-  .tab-content2 {
+    
+  .menu-content {
     width: 500px;
     border: 1px solid #ddd;
     z-index: -1;
+    display: flex;
+    justify-content: center;
   }
-  
-  .tab-content2 > .active {
+    
+  .menu-content > .active {
     display: block;
   }
-  
-  .tab-content2 > div {
+    
+  .menu-content > div {
     display: none;
     padding: 15px;
-    height: 100px;
+    height: 300px;
     line-height: 24px;
+  } 
+
+  .image {
+    height: 200px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
-  /* 宿題タブメニューここまで */
-  }
+    
