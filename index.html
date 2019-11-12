@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="container">
+
+    <div class="q-box">
+        <h2>Q1.クリックで要素のサイズをかえる</h2>
+        <p class="description">
+            この例では簡単な例としてボタンのサイズを変えてるだけですが、<br />
+            クリックするだけで、要素の色をかえたり、非表示にしたりといろいろなことができます。
+        </p>
+        <div class="btn-wrapper">
+            <div id="js-click-btn" class="btn">ボタン</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q2.ホバーで要素の透明度を変更する</h2>
+        <p class="description">
+            文字や画像にカーソルが重なった時に、変化を出すことで<br />
+            ユーザーにクリックできるということが伝わりやすくなります。
+        </p>
+        <div class="btn-wrapper">
+            <div id="js-hover-btn" class="btn">ボタン</div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q3.クリックで要素の表示非表示を切り替える</h2>
+        <p class="description">
+            ECサイトなどで、最初は商品の詳細を非表示にして、
+            ユーザーがクリックした時だけ表示するといった使い方ができます。
+        </p>
+        <div class="btn-wrapper">
+            <div id="js-show-btn" class="btn">表示</div>
+            <div id="js-hide-btn" class="btn">非表示</div>
+            <div class="box-wrapper">
+                <div id="js-target-element" class="box">これが消えるよ</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q4.要素の追加</h2>
+        <p class="description">
+            SNSのようなサイトでコメントを投稿した時に、
+            画面をリロードせずにコメントを表示させる時などに使えます。
+            ※コメントを保存するには別の方法(Ajax)と組み合わせる必要があります。
+        </p>
+        <div class="btn-wrapper">
+            <ul>
+                <li id="js-add-btn" class="btn">追加</li>
+                <li id="js-add-btn2" class="btn">追加2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q5.toggle 黒いボタンをクリック</h2>
+        <p class="description">
+            下の例のように、最初に小項目を隠して大項目のみ表示したい時に使えます。
+        </p>
+        <dl class="toggle-menu">
+            <dt class="js-toggle">関東</dt>
+            <dd>東京</dd>
+            <dd>千葉</dd>
+            <dd>埼玉</dd>
+            <dd>神奈川</dd>
+            <dd>茨城</dd>
+            <dd>栃木</dd>
+            <dd>群馬</dd>
+        </dl>
+    </div>
+
+    <div class="q-box">
+        <h2>Q6.ハンバーガーメニュー</h2>
+        <p class="description">
+            スマートフォンサイトのヘッダーなどで良く使われます。
+            ※アニメーションはCSSです。
+        </p>
+        <div id="toggle" class="js-hamburger hamburger">
+            <span></span>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q7.スムーススクロール</h2>
+        <p class="description">
+            ページTOPに戻るだけでなく、
+            ページ内の特定箇所に移動するときのアニメーションをつけることにも
+            使うことができます。
+        </p>
+        <div class="btn-wrapper">
+            <a class="btn js-scroll">ページTOPに戻る</a>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q8.モーダル</h2>
+        <p class="description">
+            webアプリにアカウント登録する際に重要事項を表示したりする
+        </p>
+        <div class="btn-wrapper modal-wrapper">
+            <div class="btn js-modal">ボタン</div>
+            <div class="modal-content">
+                <div class="modal-close js-modal-close">
+                    <span>×</span>
+                </div>
+                <p>モーダル</p>
+            </div>
+            <div id="modal-bg" class="js-modal-close"></div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q9.タブメニュー</h2>
+        <p class="description">
+            ニュースのようにジャンルごとにタブで分けたい場合などに使えます。
+        </p>
+        <div class="d-flex">
+            <ul class="tab-nav">
+                <li><a href="#tab01" class="active">HTML</a></li>
+                <li><a href="#tab02">CSS</a></li>
+                <li><a href="#tab03">Javascript</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="tab01" class="active">
+                    HTMLとは HTMLとは、Hyper Text Markup Language
+                    （ハイパーテキスト・マークアップ・ランゲージ）の略で、
+                    Webページを作るための最も基本的なマークアップ言語のひとつです。
+                    普段、私たちがブラウザで観ているWebページのほとんどが、
+                    HTMLで作られています。
+                </div>
+                <div id="tab02">
+                    CSS（Cascading Style
+                    Sheets、カスケーディング・スタイル・シート）とは、
+                    ウェブページのスタイルを指定するための言語です。
+                </div>
+                <div id="tab03">
+                    JavaScript（ジャバスクリプト）とは、
+                    プログラミング言語のひとつである。
+                    Javaと名前が似ているが、全く異なるプログラミング言語である。
+                    JavaScriptはプロトタイプベースのオブジェクト指向スクリプト言語であるが、
+                    クラスなどのクラスベースに見られる機能も取り込んでいる。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q10.スライダー</h2>
+        <p class="description">
+            ECサイトなどで商品の画像を表示するときなどに使えます。<br />
+            ※以下では実施されてないですが、最初(最後)のスライドでは、<br />
+            スライドのためのボタンを非表示にすると使いやすくなります。
+        </p>
+        <div class="d-flex">
+            <div class="slider">
+                <div class="slide-wrapper">
+                    <div class="slide"><span class="slide-text">1</span></div>
+                    <div class="slide"><span class="slide-text">2</span></div>
+                    <div class="slide"><span class="slide-text">3</span></div>
+                    <div class="slide"><span class="slide-text">4</span></div>
+                    <div class="slide"><span class="slide-text">5(最後)</span></div>
+                </div>
+                <span class="prev-slider">
+                    <</span> <span class="next-slider">>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q11.Selfハンバーガーメニュー</h2>
+        <p class="description">
+            スマートフォンサイトのヘッダーなどで良く使われます。
+            ※アニメーションはCSSです。
+        </p>
+        <div class="ham">
+            <span class="ham_line ham_line1"></span>
+            <span class="ham_line ham_line2"></span>
+            <span class="ham_line ham_line3"></span>
+        </div>
+    </div>
+
+    <div class="q-box">
+        <h2>Q12.タブメニュー（宿題）</h2>
+        <p class="description">
+            ニュースのようにジャンルごとにタブで分けたい場合などに使えます。
+        </p>
+        <div class="d-flex">
+            <ul class="tab-nav2">
+                <li><a href="#tab01" class="active">A</a></li>
+                <li><a href="#tab02">B</a></li>
+                <li><a href="#tab03">C</a></li>
+                <li><a href="#tab04">D</a></li>
+                <li><a href="#tab05">E</a></li>
+            </ul>
+            <div class="tab-content2">
+                <div id="tab01" class="active">
+                    aaaaa
+                </div>
+                <div id="tab02">
+                    bbbbb
+                </div>
+                <div id="tab03">
+                    ccccc
+                </div>
+                <div id="tab04">
+                    ddddd
+                </div>
+                <div id="tab05">
+                    eeeee
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
